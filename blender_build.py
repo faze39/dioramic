@@ -96,8 +96,8 @@ def backdrop():
     for k in range(1, 17):
         a = k / 16 * math.pi / 2
         prof.append((r * math.sin(a), r - r * math.cos(a)))
-    prof.append((r, 30.0))
-    xs = (-40.0, 40.0)
+    prof.append((r, 60.0))
+    xs = (-90.0, 90.0)
     rows = [[bm.verts.new((x, y + 8, z)) for (y, z) in prof] for x in xs]
     for i in range(len(prof) - 1):
         bm.faces.new((rows[0][i], rows[1][i], rows[1][i + 1], rows[0][i + 1]))
