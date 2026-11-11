@@ -21,7 +21,7 @@
    "id": "late",
    "shape": "text",
    "text": "LATE",
-   "color": "pink",
+   "color": "#ff2d95",
    "finish": "glow",
    "position": [
     0,
@@ -46,7 +46,7 @@
    "id": "night",
    "shape": "text",
    "text": "NIGHT",
-   "color": "sky",
+   "color": "#19c3ff",
    "finish": "glow",
    "position": [
     0,
@@ -130,24 +130,35 @@
    ]
   },
   {
-   "id": "halo",
-   "shape": "torus",
-   "color": "lilac",
+   "id": "tube_l",
+   "shape": "capsule",
+   "color": "#ff2d95",
    "finish": "glow",
    "position": [
-    0,
-    1.8,
-    3.3
-   ],
-   "rotation": [
-    90,
-    0,
-    0
+    -2.5,
+    2.2,
+    2.6
    ],
    "scale": [
-    2.6,
-    2.6,
-    0.25
+    0.18,
+    0.18,
+    2.4
+   ]
+  },
+  {
+   "id": "tube_r",
+   "shape": "capsule",
+   "color": "#19c3ff",
+   "finish": "glow",
+   "position": [
+    2.5,
+    2.2,
+    2.6
+   ],
+   "scale": [
+    0.18,
+    0.18,
+    2.4
    ]
   }
  ]

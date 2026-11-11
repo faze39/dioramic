@@ -84,7 +84,7 @@ def material(name, hexcol, finish):
         p.inputs["Subsurface Weight"].default_value = 0.05
     if finish == "glow":
         p.inputs["Emission Color"].default_value = lin(hexcol)
-        p.inputs["Emission Strength"].default_value = 2.2
+        p.inputs["Emission Strength"].default_value = 1.1
     return m
 
 
