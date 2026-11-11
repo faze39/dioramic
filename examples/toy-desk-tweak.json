@@ -1,0 +1,2 @@
+{"objects": [{"id": "hero", "color": "blue"}, {"id": "cone", "color": "yellow", "animate": [{"type": "wobble", "degrees": 15, "count": 3}]}],
+ "background": "lilac", "camera": {"speed": 0.5}}

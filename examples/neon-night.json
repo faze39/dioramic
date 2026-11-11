@@ -1,0 +1,154 @@
+{
+ "title": "late night drop",
+ "duration": 3.5,
+ "background": "navy",
+ "lighting": "night",
+ "camera": {
+  "move": "push_in",
+  "distance": 16,
+  "height": 2.4,
+  "angle": -12,
+  "target": [
+   0,
+   0,
+   2.4
+  ],
+  "lens": 45,
+  "speed": 0.8
+ },
+ "objects": [
+  {
+   "id": "late",
+   "shape": "text",
+   "text": "LATE",
+   "color": "pink",
+   "finish": "glow",
+   "position": [
+    0,
+    0,
+    4.1
+   ],
+   "scale": 1.3,
+   "animate": [
+    {
+     "type": "pop_in",
+     "start": 0,
+     "end": 0.7
+    },
+    {
+     "type": "float",
+     "height": 0.12,
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "shape": "text",
+   "text": "NIGHT",
+   "color": "sky",
+   "finish": "glow",
+   "position": [
+    0,
+    0,
+    2.6
+   ],
+   "scale": 1.3,
+   "animate": [
+    {
+     "type": "pop_in",
+     "start": 0.3,
+     "end": 1.0
+    },
+    {
+     "type": "float",
+     "height": 0.12,
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "gem_a",
+   "shape": "gem",
+   "color": "purple",
+   "position": [
+    -2.3,
+    -0.8,
+    1.1
+   ],
+   "scale": 0.6,
+   "animate": [
+    {
+     "type": "spin",
+     "turns": 1
+    },
+    {
+     "type": "float",
+     "height": 0.3,
+     "count": 1.5
+    }
+   ]
+  },
+  {
+   "id": "gem_b",
+   "shape": "gem",
+   "color": "teal",
+   "position": [
+    2.3,
+    -0.4,
+    1.4
+   ],
+   "scale": 0.55,
+   "animate": [
+    {
+     "type": "spin",
+     "turns": -1
+    },
+    {
+     "type": "float",
+     "height": 0.25,
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "ball",
+   "shape": "sphere",
+   "color": "yellow",
+   "position": [
+    0.3,
+    -2.0,
+    0.5
+   ],
+   "scale": 0.5,
+   "animate": [
+    {
+     "type": "bounce",
+     "height": 1.4,
+     "count": 3
+    }
+   ]
+  },
+  {
+   "id": "halo",
+   "shape": "torus",
+   "color": "lilac",
+   "finish": "glow",
+   "position": [
+    0,
+    1.8,
+    3.3
+   ],
+   "rotation": [
+    90,
+    0,
+    0
+   ],
+   "scale": [
+    2.6,
+    2.6,
+    0.25
+   ]
+  }
+ ]
+}

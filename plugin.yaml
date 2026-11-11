@@ -1,0 +1,34 @@
+name: dioramic
+version: "0.1.0"
+manifest_version: 2
+description: "A Blender scene director. The agent describes a scene as a structured spec (toy-style shapes, 3D text, colours, lighting, camera move, keyframed animation) and dioramic renders it in headless Blender as a vertical 9:16 MP4 plus a still preview. Iterate with dioramic_tweak. No model-written code reaches Blender."
+author: faze39
+license: MIT
+homepage: https://github.com/faze39/dioramic
+requires_hermes: ">=0.23.0"
+tags: [blender, 3d, video, animation, creative]
+provides_tools:
+  - dioramic_render
+  - dioramic_tweak
+config_schema:
+  blender_path:
+    type: str
+    default: ""
+    label: "Blender binary"
+    description: "Path to the blender executable. Empty uses $BLENDER_BIN or blender on PATH."
+  max_duration:
+    type: float
+    default: 8
+    description: "Longest clip in seconds the agent may request (hard cap 20)."
+  max_samples:
+    type: int
+    default: 16
+    description: "Highest EEVEE sample count the agent may request (hard cap 64)."
+  allow_hd:
+    type: bool
+    default: false
+    description: "Allow 1080x1920 renders (slower on CPU)."
+  render_timeout:
+    type: int
+    default: 600
+    description: "Seconds before a render is killed (30 to 1800)."
