@@ -9,6 +9,10 @@ out each scene by hand is the slow part. dioramic lets my agent draft the scene
 from a sentence, render it, and change it when I say "make the cube blue, slower
 camera".
 
+![three renders: toy desk, the same scene after a tweak, a neon title card](docs/renders.jpg)
+
+Left to right: `dioramic_render`, then `dioramic_tweak` ("make the cube blue, lilac backdrop, slower camera"), and a neon title card. Real renders on a CPU-only box.
+
 ## Tools
 
 | tool | what it does |
